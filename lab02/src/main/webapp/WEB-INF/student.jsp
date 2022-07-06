@@ -5,22 +5,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type"; content="text/html"; charset="ISO-8859-1";>
-        <title>Contact List-Spring Boot Web Application Example</title>
+        <title>Student List-Spring Boot Web Application Example</title>
     </head>
     <body>
-        <h1 align="center">My Contact List(JSP)</h1>
+        <h1 align="center">My Student List(JSP)</h1>
         <table border="1" cellpadding="10">
             <tr>
-                <th>Name</th>
-
-                <th>Email</th>
-                <th>Country</th>
+                <th>ID</th>
+                <th>NAME</th>
             </tr>
-            <c:forEach var="contact" items="${contacts}">
+            <c:forEach var="student" items="${students}">
                 <tr>
-                    <td>${contact.name}</td>
-                    <td>${contact.email}</td>
-                    <td>${contact.country}</td>
+                    <td>${student.ID}</td>
+                    <td>${student.name}</td>
                 </tr>
             </c:forEach>
         </table>

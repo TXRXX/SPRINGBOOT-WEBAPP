@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.lab02.Contact;
 import com.example.lab02.ContactBusiness;
+import com.example.lab02.Student;
+import com.example.lab02.StudentList;
+
 import org.springframework.web.bind.annotation.GetMapping;
 
 
@@ -34,6 +37,15 @@ public class MyController {
         model.addAttribute("contacts", contactList);
 
         return "contact";
+    }
+
+    @RequestMapping("/list_student")
+    public String listStudent(Model model) {
+        StudentList student = new StudentList();
+        List<Student> studentList = student.getStudentList();
+        model.addAttribute("students", studentList);
+
+        return "student";
     }
 
 }

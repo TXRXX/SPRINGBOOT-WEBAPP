@@ -10,8 +10,8 @@
 </head>
 <body>
     <h1 align="center">Index (JSP)</h1>
-    <a href="/list_contact">Click</a>
+    <a href="/list_contact">Contact List Click</a>
     <br>
-    <a href="/list_contact">Click</a>
+    <a href="/list_student">Student List Click</a>
 </body>
 </html>
