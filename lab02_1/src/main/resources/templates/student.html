@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact List - Spring Boot Web Application Example</title>
+    </head>
+    <body>
+        <h1 align="center">My Student List</h1>
+        <br />
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="student : ${students}">
+                    <td th:text="${student.ID}">ID</td>
+                    <td th:text="${student.name}">NAME</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
