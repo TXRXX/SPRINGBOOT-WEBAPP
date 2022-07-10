@@ -40,6 +40,5 @@ public class Contact {
         this.country = country;
     }
  
-    // getters and setters are excluded for brevity
  
 }
