@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Form Submission</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <form action="#" th:action="@{/form}" th:object="${customer}" method="post">
+        <p th:text="'id : ' + ${customer.id}"/>
+        <p th:text="'First Name : ' + ${customer.firstname}"/>
+        <p th:text="'Last Name : ' + ${customer.lastname}"/>
+        <a href="/form">Submit another Customer Form</a>
+    </form>
+</body>
+</html>
