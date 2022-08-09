@@ -2,6 +2,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Lab404Application",
+            "request": "launch",
+            "mainClass": "com.example.lab404.Lab404Application"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lab4Application",
+            "request": "launch",
+            "mainClass": "com.example.lab4.Lab4Application"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-Lab02Application<lab02>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
