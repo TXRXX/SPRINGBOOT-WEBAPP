@@ -20,7 +20,6 @@ public class MyController {
 	//@RequestMapping("/showCities")
     @GetMapping("/showCustomer")
     public String findCustomer(Model model) {
-        System.out.println("OOOOOOOOOOOOOOOOOOO");
         var customers= (List<Customer>) customerService.findAll();
         if(customers.isEmpty())
         	System.out.println("Customer are empty");
