@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>  
+<style type="text/css">
+    label {
+        display: inline-block;
+        width: 200px;
+        margin: 5px;
+        text-align: left;
+    }
+    input[type=text], input[type=password], select {
+        display: inline-block;
+        width: 200px;
+    }
+    input[type=radio] {
+        margin-left: 45px;
+    }
+    input[type=checkbox] {
+        margin-right: 190px;
+    }  
+    button {
+        padding: 5px;
+        margin: 10px;
+    }
+</style>
+<title> Hibernate(jpa) in Spring boot</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+ 
+<body>
+
+
+<form action="#" 
+  th:action="@{/update/{id}(id=${employee.id})}"
+  th:object="${employee}"
+  method="post">
+    <label for="name">Name</label>
+    <input type="text" th:field="*{fname}" id="name" placeholder="Name">
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{fname}"></span>
+    <label for="email">Email</label>
+    <input type="text" th:field="*{lname}" id="email" placeholder="Email">
+    <span th:if="${#fields.hasErrors('email')}" th:errors="*{lname}"></span>
+    <input type="submit" value="Update User">   
+</form>
+   
+   </body>
+</html>
